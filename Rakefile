@@ -11,7 +11,7 @@ end
 
 desc 'Build site with Jekyll'
 task :generate => [:clean, :scss] do
-  `jekyll`
+  `jekyll build`
 end
 
 desc 'Generate css'
@@ -59,7 +59,7 @@ tags:
 
 
 EOS
-  %x[echo "#{filename}" | pbcopy]
+  %x[echo "#{filename}" ]
   end
   puts "created #{filename}"
   `git add #{filename}`

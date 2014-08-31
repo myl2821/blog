@@ -1,8 +1,9 @@
 markdown: rdiscount
-pygments: true
+highlighter: true
 permalink: /:year/:month/:day/:title.html
 name: "Mind the gap"
-markdown: rdiscount
+#markdown: rdiscount
+markdown: redcarpet
 
 author: "Lizz"
 atom-baseurl: "http://www.moyuli.info"
